@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container" ng-controller="reportCtrl">
 
-<div class="row">
+    <div class="row">
     
-    <div col-md-6>
+        <div col-md-6>
     <input type="text" placeholder="Enter city" ng-model="cityName">
     
     </div>
@@ -14,6 +14,7 @@
     <div class="row">
     <div col-md-6>
     <button class="btn btn-primary" ng-click="searchData()">Search</button>
+    </div>
     </div>
     
     <div><p>Sunset in {{cityName}}:{{data.astronomy.sunset}}</p>
